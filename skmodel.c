@@ -1,7 +1,7 @@
 //////////////////////////////////////////// Spin glass phase transition ////////////////////////////////////////
 
 /* 
-   This program maps the SK model phase space using the following parameters:
+   This program maps the SK model phase space using the following parameters that have to be set by the user before compiling:
 	- total number of spins (N);
 	- thermal average dimension (tdim);
 	- number of interaction configurations (conf_num);
