@@ -1,6 +1,24 @@
 //////////////////////////////////////////// Spin glass phase transition ////////////////////////////////////////
 
 /* 
+
+Phase space of the SK model.
+
+Please cite the following paper when you use this code.
+
+[Ezaki T, Fonseca dos Reis E, Watanabe T, Sakaki M, Masuda N. Closer to critical resting-state neural dynamics in individuals with higher fluid intelligence. Commun Biol 3:1 (2020).](https://www.nature.com/articles/s42003-020-0774-y)
+
+Please do not distribute without contacting the authors above.
+
+If you find a bug in this code, please contact the authors.
+
+Author: Elohim Fonseca dos Reis
+
+Date: July 8, 2020
+
+
+Parameters:
+----------
    This program maps the SK model phase space using the following parameters that have to be set by the user before compiling:
 	- total number of spins (N);
 	- thermal average dimension (tdim);
@@ -13,6 +31,8 @@
    The array of the standard deviation of the interactions is define by the minimum value (sd_min), the maximum value (sd_max) and the step (sd_step).
    The size of the array of the standard deviation of the interactions is given by 1+(max_sd-min_sd)/sd_step.
 
+Outputs:
+-------
    The program computes: 
 	- spin glass susceptibility (Xsg);
 	- uniform susceptibility (Xuni);
