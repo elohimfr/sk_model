@@ -5,6 +5,14 @@ Please cite the following paper when you use this code.
 
 [Ezaki T, Fonseca dos Reis E, Watanabe T, Sakaki M, Masuda N. Closer to critical resting-state neural dynamics in individuals with higher fluid intelligence. Commun Biol 3:1 (2020).](https://www.nature.com/articles/s42003-020-0774-y)
 
+Please do not distribute without contacting the authors above.
+
+If you find a bug in this code, please contact the authors.
+
+Author: Elohim Fonseca dos Reis
+
+Date: July 8, 2020
+
 ### How to use
 
 1) Download skmodel.c
