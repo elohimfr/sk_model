@@ -20,7 +20,7 @@ where <a href="https://www.codecogs.com/eqnedit.php?latex=\langle&space;\ldots&s
 
 Please cite the following paper when you use this code.
 
-[Ezaki T, Fonseca dos Reis E, Watanabe T, Sakaki M, Masuda N. Closer to critical resting-state neural dynamics in individuals with higher fluid intelligence. Commun Biol 3:1 (2020).](https://www.nature.com/articles/s42003-020-0774-y)
+[Ezaki T, Fonseca dos Reis E, Watanabe T, Sakaki M, Masuda N. Closer to critical resting-state neural dynamics in individuals with higher fluid intelligence. Communications Biology 3:1 (2020).](https://www.nature.com/articles/s42003-020-0774-y)
 
 ### How to use
 
