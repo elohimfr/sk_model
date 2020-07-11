@@ -1,6 +1,6 @@
 # skmodel.c
 
-This program simulates the Sherrington-Kirkpatrick (SK) model of spin glasses without external field ($h=0$) and $kT=1$. In this case, the Hamiltonian of the SK model is given by,
+This program simulates the Sherrington-Kirkpatrick (SK) model of spin glasses without external field ($`h=0`$) and $kT=1$. In this case, the Hamiltonian of the SK model is given by,
 $$ H = -\sum_{i<j} J_{ij} S_i S_j. $$
 The spin variables are assumed to be of the Ising type ($S_i = \pm 1$). The interaction $J_{ij}$ is a quenched variable independently distributed according to a Gaussian distribution given by
 $$ P(J_{ij}) = \frac{1}{\sqrt{2 \pi \sigma^2}} \exp{\left\{ - \frac{(J_{ij} - \mu)^2}{2 \sigma^2} \right\}},$$
