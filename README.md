@@ -1,6 +1,6 @@
 # skmodel.c
 
-This program simulates the Sherrington-Kirkpatrick (SK) model of spin glasses without external field (<a href="https://www.codecogs.com/eqnedit.php?latex=h=0" target="_blank"><img src="https://latex.codecogs.com/svg.latex?h=0" title="h=0" /></a>) and, under <a href="https://www.codecogs.com/eqnedit.php?latex=kT=1" target="_blank"><img src="https://latex.codecogs.com/svg.latex?kT=1" title="kT=1" /></a>. In this case, the Hamiltonian of the SK model is given by,
+This program simulates the Sherrington-Kirkpatrick (SK) model of spin glasses without external field (<a href="https://www.codecogs.com/eqnedit.php?latex=h=0" target="_blank"><img src="https://latex.codecogs.com/svg.latex?h=0" title="h=0" /></a>), and under <a href="https://www.codecogs.com/eqnedit.php?latex=kT=1" target="_blank"><img src="https://latex.codecogs.com/svg.latex?kT=1" title="kT=1" /></a>. In this case, the Hamiltonian of the SK model is given by,
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=H&space;=&space;-\sum_{\substack{i,\,j&space;=&space;1,\,&space;\ldots,\,&space;N&space;\\&space;i<j}}&space;J_{ij}&space;S_i&space;S_j," target="_blank"><img src="https://latex.codecogs.com/svg.latex?H&space;=&space;-\sum_{\substack{i,\,j&space;=&space;1,\,&space;\ldots,\,&space;N&space;\\&space;i<j}}&space;J_{ij}&space;S_i&space;S_j," title="H = -\sum_{\substack{i,\,j = 1,\, \ldots,\, N \\ i<j}} J_{ij} S_i S_j," /></a>
 
