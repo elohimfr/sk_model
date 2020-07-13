@@ -75,7 +75,7 @@ If the user sets *n* values for the mu array and *m* values for the sd array, th
 
 6) Parallelizing
 
-The program has a built-in naive parallelization for scanning the values of <a href="https://www.codecogs.com/eqnedit.php?latex=\mu" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\mu" title="\mu" /></a> and <a href="https://www.codecogs.com/eqnedit.php?latex=\sigma" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\sigma" title="\sigma" /></a>, i.e., after compiling the code, if the user runs the same program on 10 different cores, for example, the total computation time will decrease 10 times.
+The program has a built-in naive parallelization for scanning the values of <a href="https://www.codecogs.com/eqnedit.php?latex=\mu" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\mu" title="\mu" /></a> and <a href="https://www.codecogs.com/eqnedit.php?latex=\sigma" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\sigma" title="\sigma" /></a>, i.e., after compiling the code, if the user runs the same program on 10 different cores in the same node, for example, the total computation time will decrease 10 times.
  
 7) Gather the outputs
 
