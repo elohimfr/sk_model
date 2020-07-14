@@ -1,6 +1,6 @@
 # skmodel.c
 
-This program simulates the Sherrington-Kirkpatrick (SK) model of spin glasses without external field (<a href="https://www.codecogs.com/eqnedit.php?latex=h=0" target="_blank"><img src="https://latex.codecogs.com/svg.latex?h=0" title="h=0" /></a>), and under <a href="https://www.codecogs.com/eqnedit.php?latex=kT=1" target="_blank"><img src="https://latex.codecogs.com/svg.latex?kT=1" title="kT=1" /></a>. In this case, the Hamiltonian of the SK model is given by,
+This program simulates the Sherrington-Kirkpatrick (SK) model of spin glasses without external field (<a href="https://www.codecogs.com/eqnedit.php?latex=h=0" target="_blank"><img src="https://latex.codecogs.com/svg.latex?h=0" title="h=0" /></a>) and under <a href="https://www.codecogs.com/eqnedit.php?latex=kT=1" target="_blank"><img src="https://latex.codecogs.com/svg.latex?kT=1" title="kT=1" /></a>. In this case, the Hamiltonian of the SK model is given by
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=H&space;=&space;-\sum_{\substack{i,\,j&space;=&space;1,\,&space;\ldots,\,&space;N&space;\\&space;i<j}}&space;J_{ij}&space;S_i&space;S_j," target="_blank"><img src="https://latex.codecogs.com/svg.latex?H&space;=&space;-\sum_{\substack{i,\,j&space;=&space;1,\,&space;\ldots,\,&space;N&space;\\&space;i<j}}&space;J_{ij}&space;S_i&space;S_j," title="H = -\sum_{\substack{i,\,j = 1,\, \ldots,\, N \\ i<j}} J_{ij} S_i S_j," /></a>
 
@@ -30,13 +30,13 @@ Please cite the following paper when you use this code.
 
 ### How to use
 
-1) Download skmodel.c
+1) Download skmodel.c.
 
-2) Download [mt19937ar.c](http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/emt.html) in the same folder
+2) Download [mt19937ar.c](http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/emt.html) in the same folder.
 
-3) Set the parameters
+3) Set the parameters.
 
-The following parameters have to be set by the user in the code before compiling.
+The user has to set the following parameters in the code before compiling.
 
 Parameters:
  * Number of spins (N);
@@ -44,13 +44,13 @@ Parameters:
  * *M*, i.e., number of <a href="https://www.codecogs.com/eqnedit.php?latex=J_{ij}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?J_{ij}" title="J_{ij}" /></a> configurations for the configurational average (conf_num);
  * Number of sweeps in the transient period (thermal);
  * The minimum value of <a href="https://www.codecogs.com/eqnedit.php?latex=\mu" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\mu" title="\mu" /></a> (mu_min), maximum value of <a href="https://www.codecogs.com/eqnedit.php?latex=\mu" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\mu" title="\mu" /></a> (mu_max), and the step (mu_step) between the maximum and minimum values of <a href="https://www.codecogs.com/eqnedit.php?latex=\mu" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\mu" title="\mu" /></a>.
-Therefore, the number of values of <a href="https://www.codecogs.com/eqnedit.php?latex=\mu" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\mu" title="\mu" /></a> the are scanned is 1+(mu_max-mu_min)/mu_step.
+Therefore, the number of values of <a href="https://www.codecogs.com/eqnedit.php?latex=\mu" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\mu" title="\mu" /></a> that are scanned is 1+(mu_max-mu_min)/mu_step.
  * The minimum value of <a href="https://www.codecogs.com/eqnedit.php?latex=\sigma" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\sigma" title="\sigma" /></a> (sd_min), maximum value of <a href="https://www.codecogs.com/eqnedit.php?latex=\sigma" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\sigma" title="\sigma" /></a> (sd_max), and the step (sd_step) between the maximum and minimum values of <a href="https://www.codecogs.com/eqnedit.php?latex=\sigma" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\sigma" title="\sigma" /></a>.
-Therefore, the number of values of  <a href="https://www.codecogs.com/eqnedit.php?latex=\sigma" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\sigma" title="\sigma" /></a> the are scanned is 1+(sd_max-sd_min)/sd_step.
+Therefore, the number of values of  <a href="https://www.codecogs.com/eqnedit.php?latex=\sigma" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\sigma" title="\sigma" /></a> that are scanned is 1+(sd_max-sd_min)/sd_step.
 
 4) Compile and run
 
-The program uses GSL libraries. Then, the user must link the libraries (-lgsl -lgslcblas -lm). For intance, if using gcc, type in the terminal:
+The program uses GSL libraries. So, the user must link the libraries (-lgsl -lgslcblas -lm). For intance, if using gcc, type in the terminal:
 ```
 gcc -Wall skmodel.c -o skmodel_program -lgsl -lgslcblas -lm
 ```
@@ -75,12 +75,13 @@ If the user sets *n* values for the mu array and *m* values for the sd array, th
 
 6) Parallelizing
 
-The program has a built-in naive parallelization for scanning the values of <a href="https://www.codecogs.com/eqnedit.php?latex=\mu" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\mu" title="\mu" /></a> and <a href="https://www.codecogs.com/eqnedit.php?latex=\sigma" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\sigma" title="\sigma" /></a>, i.e., after compiling the code, if the user runs the same program on different cores in the same node, the total computation time will decrease proportionally to the number of cores.
+The program has a built-in naive parallelization for scanning the values of <a href="https://www.codecogs.com/eqnedit.php?latex=\mu" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\mu" title="\mu" /></a> and <a href="https://www.codecogs.com/eqnedit.php?latex=\sigma" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\sigma" title="\sigma" /></a>.
+In other words, after compiling the code, if the user runs the same program on different cores in the same node, the total computation time will decrease proportionally to the number of cores.
  
  
 7) Gather the outputs
 
-* Download the jupyter notebook sk_heatmap.ipynb in the same folder where the outputs are.
+* Download the jupyter notebook sk_heatmap.ipynb in the folder where the outputs are.
 * Open the notebook.
 * Set the parameters accordingly, as indicated in the notebook.
 * Run the python code.
